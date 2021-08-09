@@ -1,38 +1,88 @@
-.App {
-  text-align: center;
+*{
+  box-sizing: border-box;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.navbar {  
+ 
+  width: 100%;
+  height: 10vh;
+  background-color: orangered;
   display: flex;
-  flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
   color: white;
+  font-size: 25px;
 }
 
-.App-link {
-  color: #61dafb;
+.scoreBoard {
+  position: fixed;
+  top:calc(10vh + 15px);
+  right: 15px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+ padding :10px;
+  margin: 15px 15px 0 0;
+  background-color: orangered;
+  color: white;
+  font-size: 18px;
+}
+.currentScore {
+  margin-right:15px ;
+}
+.cardBox {
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: 150px;
+width: 70%;
+height: 100px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.card {
+  padding: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 13%;
+  height: auto;
+  margin: 15px;
+  border: 2px solid orangered;
+  transition: 0.2s;
+}
+.card:hover {
+  cursor: pointer;
+  box-shadow: 3px -3px 20px orangered;
+}
+.card img  {
+  width: 100%;
+}
+
+.finish {
+  color: white;
+  background-color: orangered;
+  font-size: 25px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 50%;
+  margin: 25vh auto;
+  border: 2px solid orangered;
+  padding: 20px;
+}
+
+.finish button {
+  border: 1px solid white;
+  padding: 5px 15px;
+  font-size: 15px;
+  background-color: transparent;
+  color: white;
+  transition: 0.3s;
+}
+
+.finish button:hover {
+  cursor: pointer;
+  background-color: white;
+  color: orangered;
 }
